@@ -1,5 +1,14 @@
 TEST-MONOREPO-CLIENT
 
+### How to clone
+
+```bash
+$ git clone --recurse https://github.com/takuyahara/test-monorepo-client
+$ git -C greeter config core.sparsecheckout true && \
+echo "src" > .git/modules/greeter/info/sparse-checkout && \
+$ git -C greeter checkout greeter@0.0.3
+```
+
 ### History
 
 ### [Latest](https://github.com/takuyahara/test-monorepo-client)
