@@ -4,6 +4,24 @@ TEST-MONOREPO-CLIENT
 
 ### [Latest](https://github.com/takuyahara/test-monorepo-client)
 
+Pull submodule's update and switch to new version.
+
+Config:
+
+```bash
+$ git -C greeter pull
+$ git -C greeter checkout greeter@0.0.3
+```
+
+Test:
+
+```bash
+$ node index.js
+$
+```
+
+### [ebaabfc](https://github.com/takuyahara/test-monorepo-client/tree/ebaabfcd2be01738cff4a2aa6b169a50f645b86e)
+
 Switch submodule to another version.
 
 Config:
