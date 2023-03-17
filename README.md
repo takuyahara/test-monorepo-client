@@ -4,9 +4,27 @@ TEST-MONOREPO-CLIENT
 
 ### [Latest](https://github.com/takuyahara/test-monorepo-client)
 
-Add submodule and use it.
+Switch submodule to another version.
 
-Master: [`9bf7175`](https://github.com/takuyahara/test-monorepo-master/commit/9bf71751a7d897311adef8caaf58c1a99cd760c5)
+Config:
+
+```bash
+$ git -C greeter checkout greeter@0.0.1
+Previous HEAD position was 9bf7175 Update: greet in various languages
+HEAD is now at 649d275 Added: greeter
+```
+
+Test:
+
+```bash
+$ node index.js
+Assertion failed: Cannot greet in French.
+$
+```
+
+### [4ba411f](https://github.com/takuyahara/test-monorepo-client/tree/4ba411f19248eaafeeca64cc4065de4394be8157)
+
+Add submodule and use it.
 
 Config:
 
