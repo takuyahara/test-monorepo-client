@@ -1,4 +1,4 @@
-const { Greeter } = require("./greeter/greeter/src/Greeter");
+const { Greeter } = require("./greeter/Greeter");
 console.assert(
   Greeter.greet() === "Hello world.",
   "Cannot greet in default language."

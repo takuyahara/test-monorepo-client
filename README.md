@@ -1,17 +1,19 @@
 TEST-MONOREPO-CLIENT
 
-### How to clone
-
-```bash
-$ git clone --recurse https://github.com/takuyahara/test-monorepo-client
-$ git -C greeter config core.sparsecheckout true && \
-echo "src" > .git/modules/greeter/info/sparse-checkout && \
-$ git -C greeter checkout greeter@0.0.3
-```
-
 ### History
 
 ### [Latest](https://github.com/takuyahara/test-monorepo-client)
+
+[`degit`](https://github.com/Rich-Harris/degit) is used to clone repository partially. No need to run git commands and files/folders can be placed anywhere.
+
+`postCreateCommand.sh`
+
+```sh
+#!/bin/bash
+npx degit takuyahara/test-monorepo-master/greeter/src#greeter@latest greeter
+```
+
+### [c724628](https://github.com/takuyahara/test-monorepo-client/tree/c724628332891880925a0c308d80a6b31f403dac)
 
 Pull submodule's update and switch to new version.
 
